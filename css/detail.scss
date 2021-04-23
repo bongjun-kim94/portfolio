@@ -1,0 +1,205 @@
+@import url("common.css");
+
+.main_content{
+    width:100%;
+    padding:0 200px;
+    .headline{
+        margin-top:150px;
+        display:flex;
+        align-items: center;
+        h2{
+            color:#fff;
+            font-family: 'gotham';
+            font-size:3em;
+            opacity: 0.6;
+        }
+        a{
+            padding:0 30px;
+            img{
+                width:45px; 
+                vertical-align: middle;
+                opacity: 0.9;
+            }
+        }
+    }
+
+    .text_content1{
+        margin:50px 0;
+        
+        div{
+            p{
+                margin-bottom:30px;
+                color:#fff;
+                
+                strong{
+                    font-size:1.2em;                    
+                    display:inline-block;
+                    vertical-align: top;
+                    width:150px;
+                    font-weight: normal;
+                    color:#d9b372;
+                }
+                span{
+                    margin-left:2em;
+                    font-size:1.1em;
+                    opacity: 0.6;
+                    width:60%;
+                    display:inline-block;
+                    vertical-align: middle;
+                    margin-top:4px;
+                }
+            }
+           
+        }
+    }
+
+    .mainImage{
+        img{width:100%;}
+    }
+
+    .text_content2{
+        background:#fff;
+        padding:50px 0;
+        div{
+            margin-left:50px;
+            p{
+                color:#999;
+                line-height:3;
+                strong{
+                    font-size:1.1em;
+                    font-weight: normal;
+                    color:#333;
+                }
+                span{
+                    margin-left:1.6em;
+                    font-size:1.1em;
+                }
+            }
+            p:nth-child(1){
+                margin-top:15px;
+                line-height: 0.5;
+            }
+            .p_tap{
+                margin-left:5.3em;
+                font-size:1.1em;
+            }
+        }
+    }
+
+    .vw_text_content2{
+        background:#fff;
+        padding:50px 0;
+        div{
+            margin-left:50px;
+            p{
+                color:#999;
+                line-height:3;
+                strong{
+                    font-size:1.1em;
+                    font-weight: normal;
+                    color:#333;
+                }
+                span{
+                    margin-left:1.6em;
+                    font-size:1.1em;
+                }
+            }
+            p:nth-child(3){
+                margin-top:15px;
+                line-height: 0.5;
+            }
+            .p_tap{
+                margin-left:5.3em;
+                font-size:1.1em;
+            }
+        }
+    }
+
+    .project_function{
+        width:100%;
+        margin:200px 0;
+        h1{
+            font-size:1.5em;
+            color:#fff;
+            margin-bottom:40px;
+            opacity: 0.9;
+        }
+        div{
+            display:flex;
+            justify-content:space-between;
+
+            figure{
+                width:30%;
+                img{width:100%;}
+                figcaption{
+                    color:#fff;
+                    h2{
+                        color:#d9b372;
+                        font-size:1.4em;
+                        margin:20px 0;
+                    }
+                    p{
+                        white-space: pre-line;
+                        font-size:1em;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile_thum{
+        width:100%;
+        background:#524d4d;
+        .mobile_img{
+            width:60%;
+            display:flex;
+            justify-content: space-between;
+            margin:0 auto;
+           
+            figure{
+                margin:100px 50px;
+                img{width:100%;}
+                figcaption{
+                    color:#fff; 
+                    font-size:1em;
+                    text-align: center;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    .explanation{
+        width:100%;
+        text-align: center;
+        h2{
+            color:#d9b372;
+            margin:30px 0;
+        }
+        p{
+            color:#fff;
+            opacity: 0.9;
+        }
+    }
+
+    .next_preview{
+        width:100%;
+        margin:250px 0 100px 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;      
+        a{
+            margin:0 20px;
+            img{width:20px;}
+        }
+        .project_list{
+            img{
+                width:200px;
+                margin:0 20px;
+            }
+        }
+    }
+
+
+}

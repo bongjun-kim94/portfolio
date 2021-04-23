@@ -1,0 +1,87 @@
+@import url("common.css");
+
+.main_content{
+    width:100%;
+    margin-top:150px;
+
+    &::after{
+        content: '';
+        display:block;
+        clear: both;
+    }
+    
+    .main_left{
+        float: left;
+        position:relative;
+        left:20%;
+        figure{
+     
+            p{
+                img{
+                    width:300px;
+                    position:relative;
+                    z-index:99;
+                }
+            }
+            
+            figcaption{
+                p{
+                    color:#fff;
+                    opacity: 0.9;
+                    white-space:pre-line;
+                    font-size:1.2em;
+                }
+            }
+        }
+    }
+    .scroll-fixed{
+        position:fixed;
+        top:80px;
+        z-index:99;
+    }
+
+    .main_right{
+        width:55%;
+        color:#fff;
+        opacity: 0.9;
+        white-space:pre-line;
+        margin-top:-70px;
+        float:right;
+
+        ul{
+            li:nth-child(1){
+                h1{font-size:2.5em;}
+                p{
+                    font-size:1.3em;
+                    
+                }
+                span{
+                    width:75%;
+                    border-bottom:1px solid #ddd;
+                    display:inline-block;
+                    margin-top:50px;
+                }
+            }
+            li:nth-child(2),
+            li:nth-child(3),
+            li:nth-child(4),
+            li:nth-child(5),
+            li:nth-child(6){
+                margin-left:50px;
+                opacity: 0.9;
+                h2{font-size:2em;}
+                p{font-size:1.2em;}
+                .p_tap{margin-left:7.15em;}
+                span{
+                    white-space:pre-line;
+                    margin-left:2em;
+                }
+                dl{
+                    dt{font-size:1.5em;}
+                    dd{font-size:1.3em;}
+                }
+            }
+        }
+    }
+    
+}
