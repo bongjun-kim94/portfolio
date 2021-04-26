@@ -59,7 +59,7 @@ $(function(){
 
     function contact(){
         // 버거메뉴 contact 메뉴
-        var contactTop = $('.contact').offset().top + 100;
+        var contactTop = $('.top_btn').offset().top;
         console.log(contactTop);
         $(".contact_btn").click(function() {
             $('main').mCustomScrollbar(
@@ -82,6 +82,5 @@ $(function(){
         
     }
     contact();
-
     
 });
