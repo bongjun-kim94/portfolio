@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="inner_header">
+            <a href="index.html"><h1>bj.</h1></a>
+            <div id="burger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="project01_detail.html">Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#" class="contact_btn">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- main contents -->
+        <section class="main_contents">
+            <div class="about_thum">
+                <figure>
+                    <a href="about.html">
+                        <img src="images/main_about.jpg" alt="">
+                    </a>
+                    <figcaption>
+                        <p>bongjun kim</p>
+                        <p>Front-End Devaloper</p>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="project1_thum">
+                <figure>
+                    <p class="num">01</p>
+                    <a href="project02_detail.html" alt="">
+                        <img src="images/vw_animation.gif" alt="">
+                    </a>
+                    <figcaption>
+                        <div class="main_title">
+                            <p>v-w</p>
+                            <p>project</p>
+                        </div>
+                        <div class="sub_title">
+                            <p>
+                                V-W clone project<br>
+                                1920px, 480px
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="project2_thum">
+                <figure>
+                    <p class="num">02</p>
+                    <a href="project01_detail.html" alt="">
+                        <img src="images/daon_animation.gif" alt="">
+                    </a>
+                    <figcaption>
+                        <div class="main_title">
+                            <p>daon</p>
+                            <p>project</p>
+                        </div>
+                        <div class="sub_title">
+                            <p>
+                                renewal project<br>
+                                1920px, 480px
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="project3_thum">
+                <figure>
+                    <p class="num">03</p>
+                    <a href="project03_detail.html" alt="">
+                        <img src="images/react_main_03.jpg" alt="">
+                        <img src="images/react_animation.gif" alt="">
+                    </a>
+                    <figcaption>
+                        <div class="main_title">
+                            <p>corona19</p>
+                            <p>project</p>
+                        </div>
+                        <div class="sub_title">
+                            <p>
+                                react 이용<br>
+                                코로나 인원현황 project 
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <article class="contact">
+                <form>
+                    <h2>Contact Us</h2>
+                    <input type="text" name="name" id="name" placeholder="NAME" required>
+                    <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                    <textarea name="comment" cols="50" rows="7" placeholder="massaege" required></textarea>
+                    <button type="submit" name="submit" id="submit">send messaege</button>
+                </form>
+                <div class="contact_text">
+                    <p>let's</p>
+                    <p>talk</p>
+                    <p>
+                        이메일로 연락 주시면 상세한 이력서 보내드리겠습니다.<br>
+                        당신과 함께 성장하고 싶습니다.
+                    </p>
+                </div>
+            </article>
+
+            <div class="top_btn">
+                <p><img src="images/top_btn.png" alt=""></p>
+            </div>
+
+            <!-- canvas -->
+            <div id="dotty"></div>
+            
+            <!-- footer -->
+            <footer class="footer">
+                <div>
+                    <p class="tel">+82 10-3745-3098</p>
+                    <p class="copyright">
+                        © 2021 BJ CO.
+                        ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </footer>
+
+        </section>
+    </main>
+
+    <!-- canvas script -->
+    <script>
+        var NUM_PARTICLES = ((ROWS = 12) * (COLS = 30)), THICKNESS = Math.pow(200, 2),
+            SPACING = 50,
+            MARGIN = 100,
+            COLOR = 220,
+            DRAG = 0.95,
+            EASE = 0.25,
+            container, particle, canvas, mouse, stats, list, ctx, tog, man, dx, dy, mx, my, d, t, f, a, b, i, n, w, h, p, s, r, c; 
+            particle = { vx: 0, vy: 0, x: 0, y: 0 };
+
+        function init() {
+            container = document.getElementById('dotty');
+            canvas = document.createElement('canvas');
+            ctx = canvas.getContext('2d'); man = false;
+            tog = true; list = [];
+            w = canvas.width = COLS * SPACING + MARGIN * 2;
+            h = canvas.height = ROWS * SPACING + MARGIN * 2;
+            for (i = 0; i < NUM_PARTICLES; i++) {
+                p = Object.create(particle); p.x = p.ox = MARGIN + SPACING * (i % COLS);
+                p.y = p.oy = MARGIN + SPACING * Math.floor(i / COLS); list[i] = p;
+            }
+            container.addEventListener('mousemove', function (e) {
+                bounds = container.getBoundingClientRect();
+                mx = e.clientX - bounds.left; my = e.clientY - bounds.top; man = true;
+            });
+            if (typeof Stats === 'function') {
+                document.body.appendChild((stats = new Stats()).domElement);
+            }
+            container.appendChild(canvas); 
+        }
+
+        function step() { 
+            if (stats) stats.begin(); 
+            if (tog = !tog) {
+                if (!man) {
+                    t = +new Date() * 0.000; mx = w * 0.5 + (Math.cos(t * 2.1) * Math.cos(t * 0.9) * w * 0.45);
+                    my = h * 0.5 + (Math.sin(t * 3.2) * Math.tan(Math.sin(t * 0.8)) * h * 0.45);
+                }
+                for (i = 0; i < NUM_PARTICLES; i++) {
+                    p = list[i]; d = (dx = mx - p.x) * dx + (dy = my - p.y) * dy;
+                    f = -THICKNESS / d; 
+                    if (d < THICKNESS) {
+                        t = Math.atan2(dy, dx);
+                        p.vx += f * Math.cos(t); p.vy += f * Math.sin(t);
+                    } 
+                    p.x += (p.vx *= DRAG) + (p.ox - p.x) * EASE;
+                    p.y += (p.vy *= DRAG) + (p.oy - p.y) * EASE; 
+                } 
+            } 
+            else {
+                b = (a = ctx.createImageData(w, h)).data;
+                for (i = 0; i < NUM_PARTICLES; i++) {
+                    p = list[i]; b[n = (~~p.x + (~~p.y * w)) * 4] = b[n + 1] = b[n + 2] = COLOR, b[n + 3] = 255;
+                } 
+                ctx.putImageData(a, 0, 0);
+            } if (stats) stats.end(); requestAnimationFrame(step); 
+        }
+        init();
+        step();
+    </script>
+
+    <script>
+        // 버거메뉴
+        var burgerMenu = document.getElementById('burger-menu');
+        var overlay = document.getElementById('menu');
+        burgerMenu.addEventListener('click',function(){
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+    </script>
+
+  </body>
+</html>
