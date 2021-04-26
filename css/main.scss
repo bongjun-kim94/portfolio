@@ -12,20 +12,20 @@
 
     .about_thum{
         width:100%;
-        margin:150px 0;
+        margin:100px 0;
         
         figure{
             width:20vw;
             position:relative;
             margin:0 auto;
             background: #fff;
-            padding:20px;
+            padding:40px;
             z-index: 99;
             img{
                 width:100%; 
-                height:75vh;
+                height:65vh;
                 object-fit: cover;
-                opacity: 0.8;
+                //opacity: 1;
             }
             figcaption{
                 width:50vw;
@@ -36,7 +36,7 @@
                
                 p{
                     font-family: 'gotham';
-                    // text-shadow:2px 2px 20px rgb(0,0,0);
+                    text-shadow:2px 2px 2px rgb(0,0,0);
                     
                 }
                 p:nth-child(1){
@@ -55,31 +55,29 @@
 
     .project1_thum{
         width:100%;
-        margin:150px 0;
+        margin:200px 0;
+
         figure{
             width:20vw;
             position:relative;
             margin:0 auto;
             background: #fff;
-            padding:20px;
+            padding:40px;
             z-index: 99;
             .num{
                 color:#d9b372;
-                // transform:translateX(-50%);
                 position:absolute;
                 left:-40px; top:-30px;
             }
             img{width:100%;}
             figcaption{
-                position:absolute;
-                left:5%; top:55%;
-                transform:translate(-50%, -50%);
-                text-align: center;
-               
                 .main_title{
+                    position:absolute;
+                    left:-40%; top:35%;
+                    transform:translate(-50%, -50%);
                     p{
                         font-family: 'gotham';
-                        text-shadow:2px 2px 10px rgba(0,0,0,0.6);
+                        text-shadow:2px 2px 2px rgb(0,0,0);
                         line-height: 0.8;
                         text-align: left;
                         
@@ -93,16 +91,17 @@
                         color:#fff;
                         font-size:9em;
                         letter-spacing: -5px;
-                        transform:translateX(0);
+                        transform:translateX(-5%);
                     }
                 }
                 .sub_title{
+                    position:absolute;
+                    right:-55%; top:80%;
                     p{
                         font-size:1.5em;
                         text-align: left;
                         color:#fff;
-                        transform:translate(180px, 90px);
-                        text-shadow:1px 1px 5px rgb(0,0,0);
+                        text-shadow:1px 1px 2px rgb(0,0,0);
                     }
                 }
             }
@@ -111,32 +110,29 @@
 
     .project2_thum{
         width:100%;
-        margin:150px 0;
+        margin:200px 0;
         figure{
             width:20vw;
             position:relative;
             margin:0 auto;
             background: #fff;
             z-index: 99;
-            padding:20px;
+            padding:40px;
             
             .num{
                 color:#d9b372;
-                // transform:translateX(-15%);
                 position:absolute;
                 left:-40px; top:-30px;
             }
             img{width:100%;}
             figcaption{
-                position:absolute;
-                right:10%; top:55%;
-                transform:translate(50%, -50%);
-                text-align: center;
-               
                 .main_title{
+                    position:absolute;
+                    right:-30%; top:35%;
+                    transform:translate(50%, -50%);
                     p{
                         font-family: 'gotham';
-                        // text-shadow:2px 2px 20px rgb(0,0,0);
+                        text-shadow:2px 2px 2px rgb(0,0,0);
                         line-height: 0.8;
                         text-align: right;
                         
@@ -154,12 +150,13 @@
                     }
                 }
                 .sub_title{
+                    position:absolute;
+                    left:-45%; top:80%;
                     p{
                         font-size:1.5em;
                         text-align: left;
                         color:#fff;
-                        transform:translate(-150px, 90px);
-                        // text-shadow:1px 1px 5px rgb(0,0,0);
+                        text-shadow:1px 1px 2px rgb(0,0,0);
                     }
                 }
             }
@@ -168,35 +165,32 @@
 
     .project3_thum{
         width:100%;
-        margin:150px 0;
+        margin:200px 0;
+        
         figure{
             width:20vw;
             position:relative;
             margin:0 auto;
             background: #fff;
-            padding:20px;
+            padding:40px;
             z-index: 99;
 
             .num{
                 color:#d9b372;
-                // transform:translateX(-15%);
                 position:absolute;
                 left:-40px; top:-30px;
             }
             img{
                 width:100%;
             }
-            figcaption{
-                width:50vw;
-                position:absolute;
-                left:50%; top:55%;
-                transform:translate(-50%, -50%);
-                text-align: center;
-               
+            figcaption{             
                 .main_title{
+                    position:absolute;
+                    left:-40%; top:35%;
+                    transform:translate(-50%, -50%);
                     p{
                         font-family: 'gotham';
-                        // text-shadow:2px 2px 20px rgb(0,0,0);
+                        text-shadow:2px 2px 2px rgb(0,0,0);
                         line-height: 0.8;
                         text-align: left;
                         
@@ -211,26 +205,25 @@
                         font-size:8em;
                         letter-spacing: -5px;
                         transform:translateX(5%);
-                        
                     }
                 }
                 .sub_title{
+                    position:absolute;
+                    right:-70%; top:80%;
                     p{
                         font-size:1.5em;
                         text-align: left;
                         color:#fff;
-                        transform:translate(240px, 90px);
-                        // text-shadow:1px 1px 5px rgb(0,0,0);
+                        text-shadow:2px 2px 2px rgb(0,0,0);
                     }
                 }
             }
         }
     }
 
-
     .contact{
         width:80%;
-        margin:250px auto;
+        margin:200px auto;
         display: flex;
         justify-content: center;
         
@@ -304,6 +297,37 @@
                 font-size:1em;
             }
         }
+    }
+
+    .top_btn{
+        width:100%;
+        
+        p{
+            width:40px;
+            height:40px;
+            margin:0 auto;
+            border:solid 2px #505050;
+            border-radius: 100%;
+            text-align: center;
+            transition: all .3s ease-out;
+            position:relative;
+            bottom:100px;
+            z-index:99;
+            cursor: pointer;
+
+            img{
+                width:15px;
+                position:absolute;
+                left:50%; top:50%;
+                transform:translate(-50%, -50%);
+            }
+
+            &:hover{
+                border:2px solid #ececec;
+            }
+        }
+        
+
     }
 
 }

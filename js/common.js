@@ -16,19 +16,19 @@ $(function(){
     // inc();
 
     //about 페이지 image fixed
-    function scrollFixed(){
-        $(window).scroll(function(){
-            var scrollValue = $(this).scrollTop();
-            var fixedLeft = $('.main_left').offset().top / 2;
+    // function scrollFixed(){
+    //     $(window).scroll(function(){
+    //         var scrollValue = $(this).scrollTop();
+    //         var fixedLeft = $('.main_left').offset().top / 2;
 
-            if(scrollValue >= fixedLeft){
-                $('.main_left').addClass('scroll-fixed');
-            }else{
-                $('.main_left').removeClass('scroll-fixed');
-            }
-        });
-    }
-    scrollFixed();
+    //         if(scrollValue >= fixedLeft){
+    //             $('.main_left').addClass('scroll-fixed');
+    //         }else{
+    //             $('.main_left').removeClass('scroll-fixed');
+    //         }
+    //     });
+    // }
+    // scrollFixed();
 
     
     // function mainScroll(){
@@ -44,6 +44,29 @@ $(function(){
     //     });
     // }
     // mainScroll();
+
+    function contact(){
+        // var scrollTop = $(this).scrollTop();
+        var contactTop = $('.contact').offset().top + 100;
+        console.log(contactTop);
+        $(".contact_btn").click(function() {
+            
+            $('html, body').animate({
+                scrollTop : contactTop
+            }, 500);
+
+            $('#menu').removeClass('overlay');
+            $('#burger-menu').removeClass('close');
+        });
+
+        $('.top_btn').click(function(){
+            $('html, body').animate({
+                scrollTop : 0
+            }, 500);
+        });
+        
+    }
+    contact();
 
     
 });

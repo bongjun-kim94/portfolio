@@ -8,7 +8,7 @@
 
 .main_contents .about_thum {
   width: 100%;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .main_contents .about_thum figure {
@@ -16,16 +16,15 @@
   position: relative;
   margin: 0 auto;
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   z-index: 99;
 }
 
 .main_contents .about_thum figure img {
   width: 100%;
-  height: 75vh;
+  height: 65vh;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.8;
 }
 
 .main_contents .about_thum figure figcaption {
@@ -40,6 +39,7 @@
 
 .main_contents .about_thum figure figcaption p {
   font-family: 'gotham';
+  text-shadow: 2px 2px 2px black;
 }
 
 .main_contents .about_thum figure figcaption p:nth-child(1) {
@@ -56,7 +56,7 @@
 
 .main_contents .project1_thum {
   width: 100%;
-  margin: 150px 0;
+  margin: 200px 0;
 }
 
 .main_contents .project1_thum figure {
@@ -64,7 +64,7 @@
   position: relative;
   margin: 0 auto;
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   z-index: 99;
 }
 
@@ -79,18 +79,17 @@
   width: 100%;
 }
 
-.main_contents .project1_thum figure figcaption {
+.main_contents .project1_thum figure figcaption .main_title {
   position: absolute;
-  left: 5%;
-  top: 55%;
+  left: -40%;
+  top: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .main_contents .project1_thum figure figcaption .main_title p {
   font-family: 'gotham';
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 2px black;
   line-height: 0.8;
   text-align: left;
 }
@@ -105,22 +104,26 @@
   color: #fff;
   font-size: 9em;
   letter-spacing: -5px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+.main_contents .project1_thum figure figcaption .sub_title {
+  position: absolute;
+  right: -55%;
+  top: 80%;
 }
 
 .main_contents .project1_thum figure figcaption .sub_title p {
   font-size: 1.5em;
   text-align: left;
   color: #fff;
-  -webkit-transform: translate(180px, 90px);
-          transform: translate(180px, 90px);
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 2px black;
 }
 
 .main_contents .project2_thum {
   width: 100%;
-  margin: 150px 0;
+  margin: 200px 0;
 }
 
 .main_contents .project2_thum figure {
@@ -129,7 +132,7 @@
   margin: 0 auto;
   background: #fff;
   z-index: 99;
-  padding: 20px;
+  padding: 40px;
 }
 
 .main_contents .project2_thum figure .num {
@@ -143,17 +146,17 @@
   width: 100%;
 }
 
-.main_contents .project2_thum figure figcaption {
+.main_contents .project2_thum figure figcaption .main_title {
   position: absolute;
-  right: 10%;
-  top: 55%;
+  right: -30%;
+  top: 35%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  text-align: center;
 }
 
 .main_contents .project2_thum figure figcaption .main_title p {
   font-family: 'gotham';
+  text-shadow: 2px 2px 2px black;
   line-height: 0.8;
   text-align: right;
 }
@@ -172,17 +175,22 @@
           transform: translateX(5%);
 }
 
+.main_contents .project2_thum figure figcaption .sub_title {
+  position: absolute;
+  left: -45%;
+  top: 80%;
+}
+
 .main_contents .project2_thum figure figcaption .sub_title p {
   font-size: 1.5em;
   text-align: left;
   color: #fff;
-  -webkit-transform: translate(-150px, 90px);
-          transform: translate(-150px, 90px);
+  text-shadow: 1px 1px 2px black;
 }
 
 .main_contents .project3_thum {
   width: 100%;
-  margin: 150px 0;
+  margin: 200px 0;
 }
 
 .main_contents .project3_thum figure {
@@ -190,7 +198,7 @@
   position: relative;
   margin: 0 auto;
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   z-index: 99;
 }
 
@@ -205,18 +213,17 @@
   width: 100%;
 }
 
-.main_contents .project3_thum figure figcaption {
-  width: 50vw;
+.main_contents .project3_thum figure figcaption .main_title {
   position: absolute;
-  left: 50%;
-  top: 55%;
+  left: -40%;
+  top: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .main_contents .project3_thum figure figcaption .main_title p {
   font-family: 'gotham';
+  text-shadow: 2px 2px 2px black;
   line-height: 0.8;
   text-align: left;
 }
@@ -235,17 +242,22 @@
           transform: translateX(5%);
 }
 
+.main_contents .project3_thum figure figcaption .sub_title {
+  position: absolute;
+  right: -70%;
+  top: 80%;
+}
+
 .main_contents .project3_thum figure figcaption .sub_title p {
   font-size: 1.5em;
   text-align: left;
   color: #fff;
-  -webkit-transform: translate(240px, 90px);
-          transform: translate(240px, 90px);
+  text-shadow: 2px 2px 2px black;
 }
 
 .main_contents .contact {
   width: 80%;
-  margin: 250px auto;
+  margin: 200px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,5 +347,37 @@
   color: #fff;
   margin-top: 80px;
   font-size: 1em;
+}
+
+.main_contents .top_btn {
+  width: 100%;
+}
+
+.main_contents .top_btn p {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: solid 2px #505050;
+  border-radius: 100%;
+  text-align: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  position: relative;
+  bottom: 100px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.main_contents .top_btn p img {
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_contents .top_btn p:hover {
+  border: 2px solid #ececec;
 }
 /*# sourceMappingURL=main.css.map */

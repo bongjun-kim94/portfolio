@@ -42,6 +42,14 @@ a {
 
 .header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header .inner_header {
+  width: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,26 +59,22 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  top: 0;
-  margin: 30px auto;
-  z-index: 999;
 }
 
-.header #burger-menu {
+.header .inner_header a h1 {
+  margin-left: 80px;
+  color: #d9b372;
+}
+
+.header .inner_header #burger-menu {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-.header #menu a:hover {
+.header .inner_header #menu a:hover {
   color: #d9b372;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.header h1 {
-  margin-left: 50px;
-  color: #d9b372;
 }
 
 canvas {
@@ -104,7 +108,7 @@ canvas {
 }
 
 .footer div {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +135,7 @@ canvas {
   cursor: pointer;
   height: 27px;
   width: 27px;
-  margin: 50px;
+  margin: 50px 80px;
   overflow: visible;
   position: relative;
   z-index: 2;
