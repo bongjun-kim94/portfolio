@@ -7,28 +7,14 @@
     <title>Document</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
     <!-- header -->
-    <header class="header">
-        <div class="inner_header">
-            <a href="index.html"><h1>bj.</h1></a>
-            <div id="burger-menu">
-                <span></span>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="project01_detail.html">Work</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="#" class="contact_btn">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header class="header"></header>
 
     <main>
         <!-- main contents -->
@@ -49,7 +35,7 @@
                 <figure>
                     <p class="num">01</p>
                     <a href="project02_detail.html" alt="">
-                        <img src="images/vw_animation.gif" alt="">
+                        <img src="images/vw_mobile.jpg" alt="" data-animated="/images/vw_animation.gif" data-static="/images/vw_mobile.jpg" class="hov-animation">
                     </a>
                     <figcaption>
                         <div class="main_title">
@@ -70,7 +56,7 @@
                 <figure>
                     <p class="num">02</p>
                     <a href="project01_detail.html" alt="">
-                        <img src="images/daon_animation.gif" alt="">
+                        <img src="images/daon_mobile.jpg" alt="" data-animated="images/daon_animation.gif" data-static="images/daon_mobile.jpg" class="hov-animation">
                     </a>
                     <figcaption>
                         <div class="main_title">
@@ -92,7 +78,7 @@
                     <p class="num">03</p>
                     <a href="project03_detail.html" alt="">
                         <img src="images/react_main_03.jpg" alt="">
-                        <img src="images/react_animation.gif" alt="">
+                        <img src="images/react_static.jpg" alt="" data-animated="images/react_animation.gif" data-static="images/react_static.jpg" class="hov-animation">
                     </a>
                     <figcaption>
                         <div class="main_title">
@@ -135,15 +121,7 @@
             <div id="dotty"></div>
             
             <!-- footer -->
-            <footer class="footer">
-                <div>
-                    <p class="tel">+82 10-3745-3098</p>
-                    <p class="copyright">
-                        © 2021 BJ CO.
-                        ALL RIGHTS RESERVED.
-                    </p>
-                </div>
-            </footer>
+            <footer class="footer"></footer>
 
         </section>
     </main>
@@ -210,7 +188,7 @@
         step();
     </script>
 
-    <script>
+    <!-- <script>
         // 버거메뉴
         var burgerMenu = document.getElementById('burger-menu');
         var overlay = document.getElementById('menu');
@@ -218,7 +196,7 @@
             this.classList.toggle("close");
             overlay.classList.toggle("overlay");
         });
-    </script>
+    </script> -->
 
   </body>
 </html>

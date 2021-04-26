@@ -1,5 +1,20 @@
 $(function(){
 
+    function inc(){
+        // 헤더, 푸터 호출
+        $('.header').load('/inc.html .header > .inner_header');
+        $('.footer').load('/inc.html .footer > div');
+
+        // function init(){
+        //     $('.nav_menu a').on('click',function(){
+        //         localStorage.pageNum = $(this).index();
+        //     });
+
+        //     $('.nav_menu a').eq(localStorage.pageNum).css({ "font-weight":"bold" });
+        // }
+    }
+    inc();
+
     (function ($) {
         $(window).on("load", function () {
             $("main").mCustomScrollbar({
@@ -8,23 +23,6 @@ $(function(){
             });
         }); 
     })(jQuery);
-
-    // $("body").smoothWheel();
-
-    // function inc(){
-    // // 헤더, 푸터 호출
-    // $('.header').load('inc.html .header > div', init);
-    // $('.footer').load('inc.html .footer p');
-
-    //     function init(){
-    //         $('.nav_menu a').on('click',function(){
-    //             localStorage.pageNum = $(this).index();
-    //         });
-
-    //         $('.nav_menu a').eq(localStorage.pageNum).css({ "font-weight":"bold" });
-    //     }
-    // }
-    // inc();
 
     //about 페이지 image fixed
     // function scrollFixed(){
@@ -56,10 +54,9 @@ $(function(){
     // }
     // mainScroll();
     
-
+    // 버거메뉴 contact 메뉴
     function contact(){
-        // 버거메뉴 contact 메뉴
-        var contactTop = $('.top_btn').offset().top;
+        var contactTop = $('.top_btn').offset().top + 100;
         console.log(contactTop);
         $(".contact_btn").click(function() {
             $('main').mCustomScrollbar(
@@ -82,5 +79,15 @@ $(function(){
         
     }
     contact();
+
+    // 메인페이지 mouseover시 gif 이미지 재생
+    $(".hov-animation").mouseover(function() {
+        $(this).attr("src", $(this).data("animated"))
+    }),
+    $(".hov-animation").mouseout(function() {
+        $(this).attr("src", $(this).data("static"))
+    });
+    
     
 });
+
