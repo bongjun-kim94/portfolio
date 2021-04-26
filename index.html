@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -30,7 +33,6 @@
     <main>
         <!-- main contents -->
         <section class="main_contents">
-
             <div class="about_thum">
                 <figure>
                     <a href="about.html">
@@ -106,7 +108,6 @@
                     </figcaption>
                 </figure>
             </div>
-        
 
             <article class="contact">
                 <form>
@@ -130,21 +131,21 @@
                 <p><img src="images/top_btn.png" alt=""></p>
             </div>
 
-        </section>
+            <!-- canvas -->
+            <div id="dotty"></div>
+            
+            <!-- footer -->
+            <footer class="footer">
+                <div>
+                    <p class="tel">+82 10-3745-3098</p>
+                    <p class="copyright">
+                        © 2021 BJ CO.
+                        ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </footer>
 
-        <!-- canvas -->
-        <div id="dotty"></div>
-        
-        <!-- footer -->
-        <footer class="footer">
-            <div>
-                <p class="tel">+82 10-3745-3098</p>
-                <p class="copyright">
-                    © 2021 BJ CO.
-                    ALL RIGHTS RESERVED.
-                </p>
-            </div>
-        </footer>
+        </section>
     </main>
 
     <!-- canvas script -->
@@ -217,6 +218,17 @@
             this.classList.toggle("close");
             overlay.classList.toggle("overlay");
         });
+    </script>
+
+    <script>
+        (function ($) {
+            $(window).on("load", function () {
+                $("main").mCustomScrollbar({
+                    theme: "dark",
+                    mouseWheelPixels: 600
+                });
+            }); 
+        })(jQuery);
     </script>
 
   </body>

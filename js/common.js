@@ -1,5 +1,7 @@
 $(function(){
 
+    // $("body").smoothWheel();
+
     // function inc(){
     // // 헤더, 푸터 호출
     // $('.header').load('inc.html .header > div', init);
@@ -32,7 +34,7 @@ $(function(){
 
     
     // function mainScroll(){
-    //     $('body').height($('.main_contents').height());
+    //     $('body').height($('main').height());
         
     //     $(window).scroll(function(){
     //         var scrollTop = $(this).scrollTop();
@@ -46,6 +48,7 @@ $(function(){
     // mainScroll();
 
     function contact(){
+        // 버거메뉴 contact 메뉴
         // var scrollTop = $(this).scrollTop();
         var contactTop = $('.contact').offset().top + 100;
         console.log(contactTop);
@@ -59,6 +62,7 @@ $(function(){
             $('#burger-menu').removeClass('close');
         });
 
+        // top 버튼
         $('.top_btn').click(function(){
             $('html, body').animate({
                 scrollTop : 0

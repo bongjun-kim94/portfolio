@@ -1,14 +1,17 @@
 @import url("common.css");
 
-// main{
-//     position:fixed;
-//     left:0; top:0;
-//     width:100%;
-// }
+main{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: auto;
+}
 
 .main_contents{
     width:100%;
-    transition:.4s;
 
     .about_thum{
         width:100%;

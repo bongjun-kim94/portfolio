@@ -1,9 +1,17 @@
 @charset "UTF-8";
 @import url("common.css");
+main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
 .main_contents {
   width: 100%;
-  -webkit-transition: .4s;
-  transition: .4s;
 }
 
 .main_contents .about_thum {
