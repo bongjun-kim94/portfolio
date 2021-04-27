@@ -207,3 +207,213 @@
 
 
 }
+
+@import "./mixin";
+
+
+@include mobile {
+    .main_content{
+        width:100%;
+        padding:0 20px;
+        .headline{
+            h2{font-size:1.2em;}
+            a{
+                padding:0 10px;
+                img{width:20px}
+            }
+        }
+        
+        .text_content1{
+            div{
+                p{
+                    strong{font-size:0.8em;}
+                    span{
+                        width:90%;
+                        margin:0;
+                        font-size:0.7em;
+                    }
+                }
+            }
+        }
+        .text_content2{
+            padding:20px 0;
+            display:none;
+            // div{
+            //     margin:0; padding:0;
+            //     p{
+            //         line-height: 2;
+                    
+            //         strong{font-size:0.8em;}
+            //         span{
+            //             font-size:0.8em;
+            //             // margin-left:1em;
+            //         }
+            //     }
+            //     p:nth-child(1){
+            //         margin-top:0;
+            //         line-height: 1.5;
+            //     }
+            //     .p_tap{
+            //         margin-left:0;
+            //         font-size:0.8em;
+            //     }
+            // }
+        }
+        .project_function{
+            margin:40px 0;
+
+            h1{font-size:1.2em;}
+            div{
+                figure{
+                    figcaption{
+                        h2{font-size:0.9em;}
+                        p{font-size:0.6em;}
+                    }
+                }
+            }
+        }
+        .mobile_thum{
+            .mobile_img{
+                width:90%;
+
+                figure{
+                    margin:50px 20px;
+                    figcaption{
+                        font-size:0.8em;
+                    }
+                }
+            }
+        }
+        .explanation{
+            h2{
+                margin:15px 0;
+                font-size:1em;
+            }
+            p{font-size:0.8em;}
+        }
+        .next_preview{
+            margin:100px 0;
+            a{
+                margin:0 10px;
+            }
+            .project_list{
+                a{
+                    img{
+                        width:100px;
+                        height:20vh;
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+@include tablet {
+    .main_content{
+        width:100%;
+        padding:0 50px;
+        .headline{
+            h2{font-size:1.5em;}
+            a{
+                padding:0 10px;
+                img{width:20px}
+            }
+        }
+        
+        .text_content1{
+            div{
+                p{
+                    strong{font-size:1.1em;}
+                    span{
+                        width:90%;
+                        margin:0;
+                        font-size:0.8em;
+                    }
+                }
+            }
+        }
+        .text_content2{
+            padding:30px 0;
+            // display:none;
+            div{
+                margin:0; padding:0;
+                p{
+                    line-height: 2;
+                    
+                    strong{
+                        margin-left:2em;
+                        font-size:0.8em;
+                        span{
+                            font-size:1em;
+                        }
+                    }
+                    span{
+                        font-size:0.8em;
+                        // margin-left:1em;
+                    }
+                }
+                p:nth-child(1){
+                    margin-top:0;
+                    line-height: 1.5;
+                }
+                .p_tap{
+                    margin-left:7em;
+                    font-size:0.8em;
+                }
+            }
+        }
+        .project_function{
+            margin:50px 0;
+
+            h1{font-size:1.2em;}
+            div{
+                figure{
+                    figcaption{
+                        h2{font-size:1em;}
+                        p{font-size:0.7em;}
+                    }
+                }
+            }
+        }
+        .mobile_thum{
+            .mobile_img{
+                width:50%;
+
+                figure{
+                    margin:50px 20px;
+                    figcaption{
+                        font-size:0.8em;
+                    }
+                }
+            }
+        }
+        .explanation{
+            h2{
+                margin:15px 0;
+                font-size:1em;
+            }
+            p{font-size:0.8em;}
+        }
+        .next_preview{
+            margin:150px 0;
+            a{
+                margin:0 20px;
+            }
+            .project_list{
+                a{
+                    img{
+                        width:150px;
+                        height:30vh;
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include desktop {
+
+}
