@@ -15,15 +15,6 @@ $(function(){
     }
     inc();
 
-    (function ($) {
-        $(window).on("load", function () {
-            $("main").mCustomScrollbar({
-                theme: "dark",
-                mouseWheelPixels: 600
-            });
-        }); 
-    })(jQuery);
-
     //about 페이지 image fixed
     // function scrollFixed(){
     //     $(window).scroll(function(){

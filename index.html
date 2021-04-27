@@ -188,6 +188,17 @@
         step();
     </script>
 
+    <script>
+        (function ($) {
+            $(window).on("load", function () {
+                $("main").mCustomScrollbar({
+                    theme: "dark",
+                    mouseWheelPixels: 600
+                });
+            }); 
+        })(jQuery);
+    </script>
+
     <!-- <script>
         // 버거메뉴
         var burgerMenu = document.getElementById('burger-menu');
