@@ -2,8 +2,8 @@ $(function(){
 
     function inc(){
         // 헤더, 푸터 호출
-        $('.header').load('/inc.html .header > .inner_header');
-        $('.footer').load('/inc.html .footer > div');
+        $('.header').load('inc.html .header > .inner_header');
+        $('.footer').load('inc.html .footer > div');
 
         // function init(){
         //     $('.nav_menu a').on('click',function(){
