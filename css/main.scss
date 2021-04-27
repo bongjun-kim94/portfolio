@@ -24,22 +24,31 @@ main{
             background: #fff;
             padding:40px;
             z-index: 99;
-            img{
-                width:100%; 
-                height:65vh;
-                object-fit: cover;
-                //opacity: 1;
+            transition: .5s;
+            a{
+                img{
+                    width:100%; 
+                    height:65vh;
+                    object-fit: cover;
+                    //opacity: 1;
+                }
             }
+            &:hover{
+                transform:scale(0.95);
+                opacity: 0.8;
+            }
+
             figcaption{
                 width:50vw;
                 position:absolute;
                 left:50%; top:55%;
                 transform:translate(-50%, -50%);
                 text-align: center;
-               
+                
                 p{
                     font-family: 'gotham';
                     text-shadow:2px 2px 2px rgb(0,0,0);
+                    transition: .5s;
                     
                 }
                 p:nth-child(1){
@@ -52,6 +61,10 @@ main{
                     font-size:4.5em;
                     letter-spacing: -5px;
                 }
+            }
+
+            &:hover figcaption p{
+                transform:scale(1.1);
             }
         }
     }
@@ -67,17 +80,33 @@ main{
             background: #fff;
             padding:40px;
             z-index: 99;
+            transition: .5s;
             .num{
                 color:#d9b372;
                 position:absolute;
                 left:-40px; top:-30px;
             }
             img{width:100%;}
+
+            &:hover{
+                transform:scale(0.95);
+                opacity: 0.8;
+            }
+
+            &:hover .main_title{
+                transform:translate(-45%, -50%);
+            }
+
+            &:hover .sub_title{
+                transform:translateX(-10%);
+            }
+
             figcaption{
                 .main_title{
                     position:absolute;
                     left:-40%; top:35%;
                     transform:translate(-50%, -50%);
+                    transition: .5s;
                     p{
                         font-family: 'gotham';
                         text-shadow:2px 2px 2px rgb(0,0,0);
@@ -97,9 +126,11 @@ main{
                         transform:translateX(-5%);
                     }
                 }
+
                 .sub_title{
                     position:absolute;
                     right:-55%; top:80%;
+                    transition: .5s;
                     p{
                         font-size:1.5em;
                         text-align: left;
@@ -108,6 +139,7 @@ main{
                     }
                 }
             }
+
         }
     }
 
@@ -121,6 +153,7 @@ main{
             background: #fff;
             z-index: 99;
             padding:40px;
+            transition: .5s;
             
             .num{
                 color:#d9b372;
@@ -128,11 +161,26 @@ main{
                 left:-40px; top:-30px;
             }
             img{width:100%;}
+
+            &:hover{
+                transform:scale(0.95);
+                opacity: 0.8;
+            }
+
+            &:hover .main_title{
+                transform:translate(45%, -50%);
+            }
+
+            &:hover .sub_title{
+                transform:translateX(10%);
+            }
+
             figcaption{
                 .main_title{
                     position:absolute;
                     right:-30%; top:35%;
                     transform:translate(50%, -50%);
+                    transition: .5s;
                     p{
                         font-family: 'gotham';
                         text-shadow:2px 2px 2px rgb(0,0,0);
@@ -154,7 +202,8 @@ main{
                 }
                 .sub_title{
                     position:absolute;
-                    left:-45%; top:80%;
+                    left:-47%; top:80%;
+                    transition: .5s;
                     p{
                         font-size:1.5em;
                         text-align: left;
@@ -177,6 +226,7 @@ main{
             background: #fff;
             padding:40px;
             z-index: 99;
+            transition: .5s;
 
             .num{
                 color:#d9b372;
@@ -186,11 +236,26 @@ main{
             img{
                 width:100%;
             }
+
+            &:hover{
+                transform:scale(0.95);
+                opacity: 0.8;
+            }
+
+            &:hover .main_title{
+                transform:translate(-45%, -50%);
+            }
+
+            &:hover .sub_title{
+                transform:translateX(-10%);
+            }
+
             figcaption{             
                 .main_title{
                     position:absolute;
                     left:-40%; top:35%;
                     transform:translate(-50%, -50%);
+                    transition: .5s;
                     p{
                         font-family: 'gotham';
                         text-shadow:2px 2px 2px rgb(0,0,0);
@@ -213,6 +278,7 @@ main{
                 .sub_title{
                     position:absolute;
                     right:-70%; top:80%;
+                    transition: .5s;
                     p{
                         font-size:1.5em;
                         text-align: left;

@@ -26,13 +26,21 @@ main {
   background: #fff;
   padding: 40px;
   z-index: 99;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.main_contents .about_thum figure img {
+.main_contents .about_thum figure a img {
   width: 100%;
   height: 65vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main_contents .about_thum figure:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0.8;
 }
 
 .main_contents .about_thum figure figcaption {
@@ -48,6 +56,8 @@ main {
 .main_contents .about_thum figure figcaption p {
   font-family: 'gotham';
   text-shadow: 2px 2px 2px black;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .about_thum figure figcaption p:nth-child(1) {
@@ -62,6 +72,11 @@ main {
   letter-spacing: -5px;
 }
 
+.main_contents .about_thum figure:hover figcaption p {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .main_contents .project1_thum {
   width: 100%;
   margin: 200px 0;
@@ -74,6 +89,8 @@ main {
   background: #fff;
   padding: 40px;
   z-index: 99;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project1_thum figure .num {
@@ -87,12 +104,30 @@ main {
   width: 100%;
 }
 
+.main_contents .project1_thum figure:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.main_contents .project1_thum figure:hover .main_title {
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
+}
+
+.main_contents .project1_thum figure:hover .sub_title {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
 .main_contents .project1_thum figure figcaption .main_title {
   position: absolute;
   left: -40%;
   top: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project1_thum figure figcaption .main_title p {
@@ -120,6 +155,8 @@ main {
   position: absolute;
   right: -55%;
   top: 80%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project1_thum figure figcaption .sub_title p {
@@ -141,6 +178,8 @@ main {
   background: #fff;
   z-index: 99;
   padding: 40px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project2_thum figure .num {
@@ -154,12 +193,30 @@ main {
   width: 100%;
 }
 
+.main_contents .project2_thum figure:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.main_contents .project2_thum figure:hover .main_title {
+  -webkit-transform: translate(45%, -50%);
+          transform: translate(45%, -50%);
+}
+
+.main_contents .project2_thum figure:hover .sub_title {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
 .main_contents .project2_thum figure figcaption .main_title {
   position: absolute;
   right: -30%;
   top: 35%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project2_thum figure figcaption .main_title p {
@@ -185,8 +242,10 @@ main {
 
 .main_contents .project2_thum figure figcaption .sub_title {
   position: absolute;
-  left: -45%;
+  left: -47%;
   top: 80%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project2_thum figure figcaption .sub_title p {
@@ -208,6 +267,8 @@ main {
   background: #fff;
   padding: 40px;
   z-index: 99;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project3_thum figure .num {
@@ -221,12 +282,30 @@ main {
   width: 100%;
 }
 
+.main_contents .project3_thum figure:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.main_contents .project3_thum figure:hover .main_title {
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
+}
+
+.main_contents .project3_thum figure:hover .sub_title {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
 .main_contents .project3_thum figure figcaption .main_title {
   position: absolute;
   left: -40%;
   top: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project3_thum figure figcaption .main_title p {
@@ -254,6 +333,8 @@ main {
   position: absolute;
   right: -70%;
   top: 80%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .main_contents .project3_thum figure figcaption .sub_title p {
