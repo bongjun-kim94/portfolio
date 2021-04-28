@@ -220,6 +220,10 @@ canvas {
     #burger-menu {
         margin: 50px 20px;
     }
+
+    canvas {
+        display:none;
+    }
     
     .footer{  
         div{
@@ -247,6 +251,10 @@ canvas {
 
     #burger-menu {
         margin: 50px 50px;
+    }
+
+    canvas {
+        display:none;
     }
     
     .footer{  
@@ -276,6 +284,28 @@ canvas {
 
     #burger-menu {
         margin: 50px 100px;
+    }
+
+    canvas {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 100%;
+    }
+    
+    #dotty {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        z-index: 1;
+        transform: translateZ(0);
     }
     
     .footer{  

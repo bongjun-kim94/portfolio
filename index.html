@@ -108,14 +108,13 @@
                     </figcaption>
                 </figure>
             </div>
-
             <article class="contact">
-                <form>
+                <form id="contact" action="write-ok.php" method="post">
                     <h2>Contact Us</h2>
                     <input type="text" name="name" id="name" placeholder="NAME" required>
                     <input type="email" name="email" id="email" placeholder="E-Mail" required>
-                    <textarea name="comment" cols="50" rows="7" placeholder="massaege" required></textarea>
-                    <button type="submit" name="submit" id="submit">send messaege</button>
+                    <textarea name="massaege" cols="50" rows="7" placeholder="massaege" required></textarea>
+                    <input type="submit" name="submit" id="submit" value="send messaege">
                 </form>
                 <div class="contact_text">
                     <p>let's</p>
