@@ -2,7 +2,7 @@ $(function(){
 
     // 버거메뉴 contact 메뉴
     function contact(){
-        var contactTop = $('.top_btn').offset().top + 100;
+        var contactTop = $('.top_btn').offset().top + 300;
         $(".contact_btn").click(function() {
             $('main').mCustomScrollbar(
                 "scrollTo",

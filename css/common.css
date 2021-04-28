@@ -236,7 +236,7 @@ canvas {
 @media screen and (max-width: 480px) {
   .header .inner_header a h1 {
     margin-left: 20px;
-    color: #d9b372;
+    font-size: 1.5em;
   }
   .header .inner_header #burger-menu {
     -webkit-transform: scale(0.8);
