@@ -405,3 +405,731 @@ main{
     }
 
 }
+
+@import "./mixin";
+
+
+@include mobile {
+    .main_contents{
+        .about_thum{
+            // margin:150px 0;
+            figure{
+                width:40vw;
+                padding:20px;
+                a{
+                    img{
+                        height:30vh;
+                    }
+                }
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+                figcaption{
+                    width:80vw;
+                    p:nth-child(1){
+                        font-size:2.5em;
+                        letter-spacing: -2px;
+                    }
+                    p:nth-child(2){
+                        font-size:1.5em;
+                        letter-spacing: -2px;
+                    }
+                }
+                &:hover figcaption p{
+                    transform:scale(1.1);
+                }
+            }
+        }
+    
+        .project1_thum{
+            
+            figure{
+                width:40vw;
+                padding:20px;
+                img{width:100%;}
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(-45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(-10%);
+                }
+    
+                figcaption{
+                    .main_title{
+                        position:absolute;
+                        left:-10%; top:35%;
+                        transform:translate(-50%, -50%);
+                        p:nth-child(1){
+                            font-size:3em;
+                        }
+                        p:nth-child(2){
+                            font-size:3em;
+                            transform:translateX(-5%);
+                        }
+                    }
+    
+                    .sub_title{
+                        position:absolute;
+                        right:-30%; top:80%;
+                        p{
+                            font-size:0.8em;
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        .project2_thum{
+            width:100%;
+            margin:200px 0;
+            figure{
+                width:40vw;        
+                padding:20px;
+                
+                img{width:100%;}
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(10%);
+                }
+    
+                figcaption{
+                    .main_title{
+                        position:absolute;
+                        right:-15%; top:35%;
+                        transform:translate(50%, -50%);
+                        p:nth-child(1){
+                            font-size:3em;
+                        }
+                        p:nth-child(2){
+                            font-size:3em;
+                        }
+                    }
+                    .sub_title{
+                        position:absolute;
+                        left:-30%; top:80%;
+                        p{
+                            font-size:0.8em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .project3_thum{
+            width:100%;
+            margin:200px 0;
+            
+            figure{
+                width:40vw;
+                padding:20px;
+    
+                img{
+                    width:100%;
+                }
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(-45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(-10%);
+                }
+    
+                figcaption{             
+                    .main_title{
+                        position:absolute;
+                        left:-15%; top:35%;
+                        transform:translate(-50%, -50%);
+                        transition: .5s;
+                        p{
+                            font-family: 'gotham';
+                            text-shadow:2px 2px 2px rgb(0,0,0);
+                            line-height: 0.8;
+                            text-align: left;
+                            
+                        }
+                        p:nth-child(1){
+                            font-size:3em;
+                            letter-spacing: -6px;
+                        }
+                        p:nth-child(2){
+                            font-size:3em;
+                            letter-spacing: -5px;
+                            transform:translateX(5%);
+                        }
+                    }
+                    .sub_title{
+                        position:absolute;
+                        right:-50%; top:80%;
+                        transition: .5s;
+                        p{
+                            font-size:0.8em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .contact{
+            width:90%;
+            display:block;
+            form{
+                width:80%;
+                margin:0 auto;
+                h2{
+                    font-size:1.5em;
+                    margin-bottom:15px;
+                }
+                input{
+                    margin:5px 0;
+                    padding:10px 0;
+                }
+                input[type=submit]{
+                    border-bottom:none;
+                    cursor:pointer;
+                    font-size:1em;
+                }
+                textarea{
+                    margin-top:20px;
+                    padding:0px;
+                }
+            }
+            .contact_text{
+                margin:50px 0 0 30px;
+                p:nth-child(1){
+                    font-size:5em;
+                }
+                p:nth-child(2){
+                    font-size:5em;
+                }
+                p:nth-child(3){
+                    margin-top:50px;
+                    font-size:0.7em;
+                }
+            }
+        }
+    }
+
+}
+
+@include tablet {
+    .main_contents{
+        .about_thum{
+            margin:150px 0;
+            figure{
+                width:30vw;
+                padding:30px;
+                a{
+                    img{
+                        width:100%; 
+                        height:50vh;
+                    }
+                }
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+                figcaption{
+                    width:50vw;
+                    p:nth-child(1){
+                        font-size:3.5em;
+                    }
+                    p:nth-child(2){
+                        font-size:3em;
+                    }
+                }
+                &:hover figcaption p{
+                    transform:scale(1.1);
+                }
+            }
+        }
+    
+        .project1_thum{
+            width:100%;
+            margin:200px 0;
+            figure{
+                width:30vw;
+                padding:30px;
+                img{width:100%;}
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(-45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(-10%);
+                }
+    
+                figcaption{
+                    .main_title{
+                        position:absolute;
+                        left:-30%; top:35%;
+                        transform:translate(-50%, -50%);
+                        p:nth-child(1){
+                            font-size:6em;
+                        }
+                        p:nth-child(2){
+                            font-size:6em;
+                            transform:translateX(-5%);
+                        }
+                    }
+    
+                    .sub_title{
+                        position:absolute;
+                        right:-55%; top:80%;
+                        transition: .5s;
+                        p{
+                            font-size:1.1em;
+                            text-align: left;
+                            color:#fff;
+                            text-shadow:1px 1px 2px rgb(0,0,0);
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        .project2_thum{
+            width:100%;
+            margin:200px 0;
+            figure{
+                width:30vw;        
+                padding:30px;
+                
+                img{width:100%;}
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(10%);
+                }
+    
+                figcaption{
+                    .main_title{
+                        position:absolute;
+                        right:-30%; top:35%;
+                        transform:translate(50%, -50%);
+                        transition: .5s;
+                        p{
+                            font-family: 'gotham';
+                            text-shadow:2px 2px 2px rgb(0,0,0);
+                            line-height: 0.8;
+                            text-align: right;
+                            
+                        }
+                        p:nth-child(1){
+                            font-size:6em;
+                        }
+                        p:nth-child(2){
+                            font-size:6em;
+                            transform:translateX(5%);
+                        }
+                    }
+                    .sub_title{
+                        position:absolute;
+                        left:-50%; top:80%;
+                        p{
+                            font-size:1.1em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .project3_thum{
+            width:100%;
+            margin:200px 0;
+            
+            figure{
+                width:30vw;
+                padding:30px;
+
+                img{
+                    width:100%;
+                }
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(-45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(-10%);
+                }
+    
+                figcaption{             
+                    .main_title{
+                        position:absolute;
+                        left:-40%; top:35%;
+                        transform:translate(-50%, -50%);
+                        transition: .5s;
+                        p{
+                            font-family: 'gotham';
+                            text-shadow:2px 2px 2px rgb(0,0,0);
+                            line-height: 0.8;
+                            text-align: left;
+                            
+                        }
+                        p:nth-child(1){
+                            color:#fff;
+                            font-size:5em;
+                            letter-spacing: -6px;
+                        }
+                        p:nth-child(2){
+                            color:#fff;
+                            font-size:5em;
+                            letter-spacing: -5px;
+                            transform:translateX(5%);
+                        }
+                    }
+                    .sub_title{
+                        position:absolute;
+                        right:-70%; top:80%;
+                        transition: .5s;
+                        p{
+                            font-size:1.1em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .contact{
+            width:80%;
+            
+            form{
+                width:40%;
+    
+                h2{
+                    font-size:2em;
+                    margin-bottom:15px;
+                }
+                input{
+                    margin:10px 0;
+                    padding:10px 0;
+                }
+                input[type=submit]{
+                    border-bottom:none;
+                    cursor:pointer;
+                    font-size:1.3em;
+                }
+                textarea{
+                    margin-top:30px;
+                    padding:0px;
+                }
+            }
+            .contact_text{
+                p:nth-child(1){
+                    font-size:8.5em;
+                }
+                p:nth-child(2){
+                    font-size:8.5em;
+                }
+                p:nth-child(3){
+                    margin-top:70px;
+                    font-size:0.8em;
+                }
+            }
+        }
+    }
+    
+}
+
+@include desktop {
+    .main_contents{
+        .about_thum{
+            margin:100px 0;
+            figure{
+                width:25vw;
+                padding:40px;
+                a{
+                    img{
+                        width:100%; 
+                        height:45vh;
+                    }
+                }
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                figcaption{
+                    width:50vw;
+                    position:absolute;
+                    left:50%; top:55%;
+                    transform:translate(-50%, -50%);
+                    text-align: center;
+                    
+                    p:nth-child(1){
+                        font-size:4em;
+                    }
+                    p:nth-child(2){
+                        font-size:3.5em;
+                    }
+                }
+                &:hover figcaption p{
+                    transform:scale(1.1);
+                }
+            }
+        }
+    
+        .project1_thum{
+            width:100%;
+            margin:200px 0;
+            figure{
+                width:25vw;
+                padding:40px;
+
+                img{width:100%;}
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(-45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(-10%);
+                }
+    
+                figcaption{
+                    .main_title{
+                        position:absolute;
+                        left:-40%; top:35%;
+                        transform:translate(-50%, -50%);
+                        p:nth-child(1){
+                            font-size:7em;
+                            letter-spacing: -6px;
+                        }
+                        p:nth-child(2){
+                            font-size:7em;
+                            letter-spacing: -5px;
+                            transform:translateX(-5%);
+                        }
+                    }
+    
+                    .sub_title{
+                        position:absolute;
+                        right:-60%; top:80%;
+                        transition: .5s;
+                        p{
+                            font-size:1.2em;
+                            text-align: left;
+                            color:#fff;
+                            text-shadow:1px 1px 2px rgb(0,0,0);
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        .project2_thum{
+            width:100%;
+            margin:200px 0;
+            figure{
+                width:25vw;        
+                padding:40px;
+                
+                img{width:100%;}
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(10%);
+                }
+    
+                figcaption{
+                    .main_title{
+                        position:absolute;
+                        right:-30%; top:35%;
+                        transform:translate(50%, -50%);
+                        transition: .5s;
+                        p{
+                            font-family: 'gotham';
+                            text-shadow:2px 2px 2px rgb(0,0,0);
+                            line-height: 0.8;
+                            text-align: right;
+                            
+                        }
+                        p:nth-child(1){
+                            font-size:7em;
+                        }
+                        p:nth-child(2){
+                            font-size:7em;
+                            transform:translateX(5%);
+                        }
+                    }
+                    .sub_title{
+                        position:absolute;
+                        left:-55%; top:80%;
+                        p{
+                            font-size:1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .project3_thum{
+            width:100%;
+            margin:200px 0;
+            
+            figure{
+                width:25vw;
+                padding:40px;
+    
+                img{
+                    width:100%;
+                }
+    
+                &:hover{
+                    transform:scale(0.95);
+                    opacity: 0.8;
+                }
+    
+                &:hover .main_title{
+                    transform:translate(-45%, -50%);
+                }
+    
+                &:hover .sub_title{
+                    transform:translateX(-10%);
+                }
+    
+                figcaption{             
+                    .main_title{
+                        position:absolute;
+                        left:-40%; top:35%;
+                        transform:translate(-50%, -50%);
+                        transition: .5s;
+                        p{
+                            font-family: 'gotham';
+                            text-shadow:2px 2px 2px rgb(0,0,0);
+                            line-height: 0.8;
+                            text-align: left;
+                            
+                        }
+                        p:nth-child(1){
+                            color:#fff;
+                            font-size:6em;
+                            letter-spacing: -6px;
+                        }
+                        p:nth-child(2){
+                            color:#fff;
+                            font-size:6em;
+                            letter-spacing: -5px;
+                            transform:translateX(5%);
+                        }
+                    }
+                    .sub_title{
+                        position:absolute;
+                        right:-80%; top:80%;
+                        transition: .5s;
+                        p{
+                            font-size:1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .contact{
+            width:80%;
+            margin:200px auto;
+            
+            form{
+                width:40%;
+    
+                h2{
+                    font-size:2em;
+                    margin-bottom:15px;
+                }
+                input{
+                    margin:10px 0;
+                    padding:10px 0;
+                }
+                input[type=submit]{
+                    border-bottom:none;
+                    cursor:pointer;
+                    font-size:1.5em;
+                }
+                textarea{
+                    margin-top:30px;
+                    padding:0px;
+                }
+            }
+            .contact_text{
+                margin-left:100px;
+                p{
+                    font-family: 'gotham';
+                    line-height: 0.8;
+                    letter-spacing: -5px;
+                }
+                p:nth-child(1){
+                    font-size:9em;
+                }
+                p:nth-child(2){
+                    font-size:9em;
+                }
+                p:nth-child(3){
+                    letter-spacing: -1px;
+                    line-height: 1.3;
+                    color:#fff;
+                    margin-top:80px;
+                    font-size:0.9em;
+                }
+            }
+        }
+    }
+
+}
