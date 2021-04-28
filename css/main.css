@@ -16,7 +16,7 @@ main {
 
 .main_contents .about_thum {
   width: 100%;
-  margin: 100px 0;
+  margin: 150px 0;
 }
 
 .main_contents .about_thum figure {
@@ -32,7 +32,7 @@ main {
 
 .main_contents .about_thum figure a img {
   width: 100%;
-  height: 65vh;
+  height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
