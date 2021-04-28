@@ -71,7 +71,6 @@ canvas {
     height: 100%;
 }
 
-
 #dotty {
     position: fixed;
     left: 0;
@@ -194,4 +193,100 @@ canvas {
     font-size: 32px;
     margin-bottom:30px;
     text-decoration:none;
+}
+
+@import "./mixin";
+
+@include mobile {
+    .header{
+        .inner_header{
+            a{
+                h1{
+                    margin-left:20px;
+                    color:#d9b372;
+                }
+            }
+            #burger-menu{
+                transform:scale(0.8);
+            }
+            #menu a:hover{
+                color:#d9b372;
+                transition: .3s;
+            }    
+        }
+    
+    }
+
+    #burger-menu {
+        margin: 50px 20px;
+    }
+    
+    .footer{  
+        div{
+            margin-bottom:20px;
+            .tel{font-size:0.7em;}
+            .copyright{
+                height:55px;
+                white-space:pre-line;
+                font-size:0.7em;
+            }
+        }
+    }
+
+}
+@include tablet {
+    .header{
+        .inner_header{
+            a{
+                h1{
+                    margin-left:50px;
+                }
+            }
+        }
+    }
+
+    #burger-menu {
+        margin: 50px 50px;
+    }
+    
+    .footer{  
+        div{
+            margin-bottom:20px;
+            .tel{font-size:0.8em;}
+            .copyright{
+                height:70px;
+                white-space:pre-line;
+                font-size:0.8em;
+            }
+        }
+    }
+
+}
+
+@include desktop {
+    .header{
+        .inner_header{
+            a{
+                h1{
+                    margin-left:100px;
+                }
+            }
+        }
+    }
+
+    #burger-menu {
+        margin: 50px 100px;
+    }
+    
+    .footer{  
+        div{
+            margin-bottom:20px;
+            .tel{font-size:0.8em;}
+            .copyright{
+                height:70px;
+                white-space:pre-line;
+                font-size:0.8em;
+            }
+        }
+    }
 }

@@ -232,4 +232,74 @@ canvas {
   margin-bottom: 30px;
   text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+  .header .inner_header a h1 {
+    margin-left: 20px;
+    color: #d9b372;
+  }
+  .header .inner_header #burger-menu {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .header .inner_header #menu a:hover {
+    color: #d9b372;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #burger-menu {
+    margin: 50px 20px;
+  }
+  .footer div {
+    margin-bottom: 20px;
+  }
+  .footer div .tel {
+    font-size: 0.7em;
+  }
+  .footer div .copyright {
+    height: 55px;
+    white-space: pre-line;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .header .inner_header a h1 {
+    margin-left: 50px;
+  }
+  #burger-menu {
+    margin: 50px 50px;
+  }
+  .footer div {
+    margin-bottom: 20px;
+  }
+  .footer div .tel {
+    font-size: 0.8em;
+  }
+  .footer div .copyright {
+    height: 70px;
+    white-space: pre-line;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .header .inner_header a h1 {
+    margin-left: 100px;
+  }
+  #burger-menu {
+    margin: 50px 100px;
+  }
+  .footer div {
+    margin-bottom: 20px;
+  }
+  .footer div .tel {
+    font-size: 0.8em;
+  }
+  .footer div .copyright {
+    height: 70px;
+    white-space: pre-line;
+    font-size: 0.8em;
+  }
+}
 /*# sourceMappingURL=common.css.map */
