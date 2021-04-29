@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/detail.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/detail.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -21,7 +22,7 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li><a href="project01_detail.html">Work</a></li>
+                    <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="#" class="contact_btn">Contact Us</a></li>
                 </ul>
@@ -30,40 +31,40 @@
     </header>
 
     <article class="main_content">
-        <section class="headline">
+        <section class="headline headline animate__animated animate__fadeIn">
             <h2>corona19</h2><a href="https://bongjun-kim94.github.io/vw/"><img src="images/git_icon.png" alt=""></a>
         </section>
 
         <section class="text_content1">
             <div>
-                <p>
+                <p class="animate__animated animate__fadeInUp">
                     <strong>프로젝트 이름</strong><span>react - corona</span>
                 </p>
-                <p>
+                <p class="animate__animated animate__fadeInUp">
                     <strong>프로젝트 개요</strong><span>심각한 사태에 놓인 코로나19의 전국 하루 발생현황을 그래프를 활용하여 표현</span>
                 </p>
-                <p>
+                <p class="animate__animated animate__fadeInUp">
                     <strong>참&emsp;&ensp;여&emsp;&ensp;도</strong><span>Design:100% Coding:100%</span>
                 </p>
-                <p>
+                <p class="animate__animated animate__fadeInUp">
                     <strong>제&nbsp;&ensp;작&nbsp;&ensp;기&nbsp;&ensp;간</strong><span>2021.04~2021.04</span>
                 </p>
             </div>
         </section>
 
-        <section class="mainImage">
+        <section class="mainImage animate__animated">
             <img src="images/react_main_03.jpg" alt="">
         </section>
 
-        <section class="vw_text_content2">
-            <div>
+        <section class="text_content2">
+            <div class="animate__animated">
                 <p>
                     <strong><span>목표</span></strong><span>react를 활용하여, 코로나 현황 페이지를 만들어보자</span>
                 </p>
                 <p>
                     <strong>문제발생</strong><span>선생님이랑 같이 진행을 하였는데, 처음 접해본 react라 구문 이해에 어려움을 겪었다.</span>
                 </p>
-                <p>
+                <p class="p_nth">
                     <strong>해결방안</strong><span>관련된 구글 검색을 많이하고, 리액트 책도 참고하여 이해를 높혔다.</span>
                     <p class="p_tap">프로젝트라고 하기도 뭐한 간단한 페이지지만 html,css,js와는 다른 흥미로운 매력이 있다.</p>
                 </p>
@@ -74,11 +75,11 @@
         </section>
 
         <section class="project_function">
-            <h1>중점 구현 기능</h1>
+            <h1 class="animate__animated">중점 구현 기능</h1>
             <div>
                 <figure>
-                    <img src="images/corona19_function_01.jpg" alt="">
-                    <figcaption>
+                    <p class="animate__animated"><img src="images/corona19_function_01.jpg" alt=""></p>
+                    <figcaption class="animate__animated">
                         <h2>select box 선택 시 표 및 차트 변경</h2>
                         <p>json을 이용하여, 지역별로 값을 넣어놓고
                             select 값이 변경될 때마다 담겨있는 값이 변경되고,
@@ -87,8 +88,8 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/corona19_function_02.jpg" alt="">
-                    <figcaption>
+                    <p class="animate__animated"><img src="images/corona19_function_02.jpg" alt=""></p>
+                    <figcaption class="animate__animated">
                         <h2>react router</h2>
                         <p>react router 사용하여, 헤더 메뉴 추가
                             헤더 메뉴 누르면 각각 내용이 아래 본문에 나옴
@@ -98,8 +99,8 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/corona19_function_03.JPG" alt="">
-                    <figcaption>
+                    <p class="animate__animated"><img src="images/corona19_function_03.jpg" alt=""></p>
+                    <figcaption class="animate__animated">
                         <h2>Hook (useState, useEffect)</h2>
                         <p>json으로 코로나 현황 데이터를 불러오고,
                             useState, useEffect를 사용하여 
@@ -132,7 +133,6 @@
         </section>
     </article>
     
-
     <!-- footer -->
     <footer class="footer"></footer>
 

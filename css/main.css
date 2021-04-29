@@ -934,7 +934,7 @@ main {
   }
   .main_contents .about_thum figure a img {
     width: 100%;
-    height: 45vh;
+    height: 50vh;
   }
   .main_contents .about_thum figure:hover {
     -webkit-transform: scale(0.95);
