@@ -343,10 +343,14 @@ main {
   text-shadow: 2px 2px 2px black;
 }
 
-.main_contents .iframe {
+.main_contents .contact {
+  width: 100%;
+}
+
+.main_contents .contact .iframe {
+  width: 100%;
+  margin: 0 auto;
   background: transparent;
-  margin: 0;
-  padding: 0;
   margin-bottom: 200px;
   position: relative;
   z-index: 99;
