@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+// font-family: 'Varela Round', sans-serif;
+
 @font-face{
     font-family: 'roboto';
     src:url('../assets/fonts/Roboto/Roboto-Regular.ttf');
@@ -44,6 +47,7 @@ a{
             h1{
                 margin-left:80px;
                 color:#d9b372;
+                font-family: 'Varela Round', sans-serif;
             }
         }
         #burger-menu{

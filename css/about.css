@@ -62,8 +62,7 @@
 .main_content .main_right ul li:nth-child(2),
 .main_content .main_right ul li:nth-child(3),
 .main_content .main_right ul li:nth-child(4),
-.main_content .main_right ul li:nth-child(5),
-.main_content .main_right ul li:nth-child(6) {
+.main_content .main_right ul li:nth-child(5) {
   margin-left: 50px;
   opacity: 0.9;
 }
@@ -71,50 +70,58 @@
 .main_content .main_right ul li:nth-child(2) h2,
 .main_content .main_right ul li:nth-child(3) h2,
 .main_content .main_right ul li:nth-child(4) h2,
-.main_content .main_right ul li:nth-child(5) h2,
-.main_content .main_right ul li:nth-child(6) h2 {
+.main_content .main_right ul li:nth-child(5) h2 {
   font-size: 2em;
 }
 
 .main_content .main_right ul li:nth-child(2) p,
 .main_content .main_right ul li:nth-child(3) p,
 .main_content .main_right ul li:nth-child(4) p,
-.main_content .main_right ul li:nth-child(5) p,
-.main_content .main_right ul li:nth-child(6) p {
+.main_content .main_right ul li:nth-child(5) p {
   font-size: 1.2em;
 }
 
 .main_content .main_right ul li:nth-child(2) .p_tap,
 .main_content .main_right ul li:nth-child(3) .p_tap,
 .main_content .main_right ul li:nth-child(4) .p_tap,
-.main_content .main_right ul li:nth-child(5) .p_tap,
-.main_content .main_right ul li:nth-child(6) .p_tap {
+.main_content .main_right ul li:nth-child(5) .p_tap {
   margin-left: 7.15em;
 }
 
 .main_content .main_right ul li:nth-child(2) span,
 .main_content .main_right ul li:nth-child(3) span,
 .main_content .main_right ul li:nth-child(4) span,
-.main_content .main_right ul li:nth-child(5) span,
-.main_content .main_right ul li:nth-child(6) span {
+.main_content .main_right ul li:nth-child(5) span {
   white-space: pre-line;
   margin-left: 2em;
 }
 
-.main_content .main_right ul li:nth-child(2) dl dt,
-.main_content .main_right ul li:nth-child(3) dl dt,
-.main_content .main_right ul li:nth-child(4) dl dt,
-.main_content .main_right ul li:nth-child(5) dl dt,
+.main_content .main_right ul li:nth-child(6) h2 {
+  font-size: 2em;
+}
+
 .main_content .main_right ul li:nth-child(6) dl dt {
   font-size: 1.5em;
 }
 
-.main_content .main_right ul li:nth-child(2) dl dd,
-.main_content .main_right ul li:nth-child(3) dl dd,
-.main_content .main_right ul li:nth-child(4) dl dd,
-.main_content .main_right ul li:nth-child(5) dl dd,
 .main_content .main_right ul li:nth-child(6) dl dd {
-  font-size: 1.3em;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_content .main_right ul li:nth-child(6) dl dd p {
+  width: 30%;
+  font-size: 1.4em;
+}
+
+.main_content .main_right ul li:nth-child(6) dl dd span {
+  width: 70%;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -152,53 +159,50 @@
   .main_content .main_right ul li:nth-child(2),
   .main_content .main_right ul li:nth-child(3),
   .main_content .main_right ul li:nth-child(4),
-  .main_content .main_right ul li:nth-child(5),
-  .main_content .main_right ul li:nth-child(6) {
+  .main_content .main_right ul li:nth-child(5) {
     margin-left: 15px;
   }
   .main_content .main_right ul li:nth-child(2) h2,
   .main_content .main_right ul li:nth-child(3) h2,
   .main_content .main_right ul li:nth-child(4) h2,
-  .main_content .main_right ul li:nth-child(5) h2,
-  .main_content .main_right ul li:nth-child(6) h2 {
+  .main_content .main_right ul li:nth-child(5) h2 {
     font-size: 1em;
   }
   .main_content .main_right ul li:nth-child(2) p,
   .main_content .main_right ul li:nth-child(3) p,
   .main_content .main_right ul li:nth-child(4) p,
-  .main_content .main_right ul li:nth-child(5) p,
-  .main_content .main_right ul li:nth-child(6) p {
+  .main_content .main_right ul li:nth-child(5) p {
     font-size: 0.6em;
   }
   .main_content .main_right ul li:nth-child(2) .p_tap,
   .main_content .main_right ul li:nth-child(3) .p_tap,
   .main_content .main_right ul li:nth-child(4) .p_tap,
-  .main_content .main_right ul li:nth-child(5) .p_tap,
-  .main_content .main_right ul li:nth-child(6) .p_tap {
+  .main_content .main_right ul li:nth-child(5) .p_tap {
     margin-left: 0;
   }
   .main_content .main_right ul li:nth-child(2) span,
   .main_content .main_right ul li:nth-child(3) span,
   .main_content .main_right ul li:nth-child(4) span,
-  .main_content .main_right ul li:nth-child(5) span,
-  .main_content .main_right ul li:nth-child(6) span {
+  .main_content .main_right ul li:nth-child(5) span {
     white-space: pre-line;
     margin-left: 2em;
   }
-  .main_content .main_right ul li:nth-child(2) dl dt,
-  .main_content .main_right ul li:nth-child(3) dl dt,
-  .main_content .main_right ul li:nth-child(4) dl dt,
-  .main_content .main_right ul li:nth-child(5) dl dt,
-  .main_content .main_right ul li:nth-child(6) dl dt {
-    font-size: 0.9em;
+  .main_content .main_right ul li:nth-child(6) h2 {
+    font-size: 1em;
   }
-  .main_content .main_right ul li:nth-child(2) dl dd,
-  .main_content .main_right ul li:nth-child(3) dl dd,
-  .main_content .main_right ul li:nth-child(4) dl dd,
-  .main_content .main_right ul li:nth-child(5) dl dd,
+  .main_content .main_right ul li:nth-child(6) dl dt {
+    font-size: 1em;
+  }
   .main_content .main_right ul li:nth-child(6) dl dd {
-    font-size: 0.6em;
-    margin: 0 25px;
+    margin-left: 0;
+  }
+  .main_content .main_right ul li:nth-child(6) dl dd p {
+    width: 30%;
+    font-size: 0.7em;
+  }
+  .main_content .main_right ul li:nth-child(6) dl dd span {
+    width: 70%;
+    font-size: 0.6rem;
   }
 }
 
@@ -233,52 +237,50 @@
   .main_content .main_right ul li:nth-child(2),
   .main_content .main_right ul li:nth-child(3),
   .main_content .main_right ul li:nth-child(4),
-  .main_content .main_right ul li:nth-child(5),
-  .main_content .main_right ul li:nth-child(6) {
+  .main_content .main_right ul li:nth-child(5) {
     margin-left: 30px;
   }
   .main_content .main_right ul li:nth-child(2) h2,
   .main_content .main_right ul li:nth-child(3) h2,
   .main_content .main_right ul li:nth-child(4) h2,
-  .main_content .main_right ul li:nth-child(5) h2,
-  .main_content .main_right ul li:nth-child(6) h2 {
+  .main_content .main_right ul li:nth-child(5) h2 {
     font-size: 1.5em;
   }
   .main_content .main_right ul li:nth-child(2) p,
   .main_content .main_right ul li:nth-child(3) p,
   .main_content .main_right ul li:nth-child(4) p,
-  .main_content .main_right ul li:nth-child(5) p,
-  .main_content .main_right ul li:nth-child(6) p {
+  .main_content .main_right ul li:nth-child(5) p {
     font-size: 0.9em;
   }
   .main_content .main_right ul li:nth-child(2) .p_tap,
   .main_content .main_right ul li:nth-child(3) .p_tap,
   .main_content .main_right ul li:nth-child(4) .p_tap,
-  .main_content .main_right ul li:nth-child(5) .p_tap,
-  .main_content .main_right ul li:nth-child(6) .p_tap {
+  .main_content .main_right ul li:nth-child(5) .p_tap {
     margin-left: 7.15em;
   }
   .main_content .main_right ul li:nth-child(2) span,
   .main_content .main_right ul li:nth-child(3) span,
   .main_content .main_right ul li:nth-child(4) span,
-  .main_content .main_right ul li:nth-child(5) span,
-  .main_content .main_right ul li:nth-child(6) span {
+  .main_content .main_right ul li:nth-child(5) span {
     white-space: pre-line;
     margin-left: 2em;
   }
-  .main_content .main_right ul li:nth-child(2) dl dt,
-  .main_content .main_right ul li:nth-child(3) dl dt,
-  .main_content .main_right ul li:nth-child(4) dl dt,
-  .main_content .main_right ul li:nth-child(5) dl dt,
-  .main_content .main_right ul li:nth-child(6) dl dt {
-    font-size: 1.3em;
+  .main_content .main_right ul li:nth-child(6) h2 {
+    font-size: 1.7em;
   }
-  .main_content .main_right ul li:nth-child(2) dl dd,
-  .main_content .main_right ul li:nth-child(3) dl dd,
-  .main_content .main_right ul li:nth-child(4) dl dd,
-  .main_content .main_right ul li:nth-child(5) dl dd,
+  .main_content .main_right ul li:nth-child(6) dl dt {
+    font-size: 1.1em;
+  }
   .main_content .main_right ul li:nth-child(6) dl dd {
-    font-size: 0.9em;
+    margin-left: 20px;
+  }
+  .main_content .main_right ul li:nth-child(6) dl dd p {
+    width: 30%;
+    font-size: 1em;
+  }
+  .main_content .main_right ul li:nth-child(6) dl dd span {
+    width: 70%;
+    font-size: 0.8rem;
   }
 }
 
@@ -312,52 +314,50 @@
   .main_content .main_right ul li:nth-child(2),
   .main_content .main_right ul li:nth-child(3),
   .main_content .main_right ul li:nth-child(4),
-  .main_content .main_right ul li:nth-child(5),
-  .main_content .main_right ul li:nth-child(6) {
+  .main_content .main_right ul li:nth-child(5) {
     margin-left: 40px;
   }
   .main_content .main_right ul li:nth-child(2) h2,
   .main_content .main_right ul li:nth-child(3) h2,
   .main_content .main_right ul li:nth-child(4) h2,
-  .main_content .main_right ul li:nth-child(5) h2,
-  .main_content .main_right ul li:nth-child(6) h2 {
+  .main_content .main_right ul li:nth-child(5) h2 {
     font-size: 1.5em;
   }
   .main_content .main_right ul li:nth-child(2) p,
   .main_content .main_right ul li:nth-child(3) p,
   .main_content .main_right ul li:nth-child(4) p,
-  .main_content .main_right ul li:nth-child(5) p,
-  .main_content .main_right ul li:nth-child(6) p {
+  .main_content .main_right ul li:nth-child(5) p {
     font-size: 1.1em;
   }
   .main_content .main_right ul li:nth-child(2) .p_tap,
   .main_content .main_right ul li:nth-child(3) .p_tap,
   .main_content .main_right ul li:nth-child(4) .p_tap,
-  .main_content .main_right ul li:nth-child(5) .p_tap,
-  .main_content .main_right ul li:nth-child(6) .p_tap {
+  .main_content .main_right ul li:nth-child(5) .p_tap {
     margin-left: 7.15em;
   }
   .main_content .main_right ul li:nth-child(2) span,
   .main_content .main_right ul li:nth-child(3) span,
   .main_content .main_right ul li:nth-child(4) span,
-  .main_content .main_right ul li:nth-child(5) span,
-  .main_content .main_right ul li:nth-child(6) span {
+  .main_content .main_right ul li:nth-child(5) span {
     white-space: pre-line;
     margin-left: 2em;
   }
-  .main_content .main_right ul li:nth-child(2) dl dt,
-  .main_content .main_right ul li:nth-child(3) dl dt,
-  .main_content .main_right ul li:nth-child(4) dl dt,
-  .main_content .main_right ul li:nth-child(5) dl dt,
-  .main_content .main_right ul li:nth-child(6) dl dt {
-    font-size: 1.3em;
+  .main_content .main_right ul li:nth-child(6) h2 {
+    font-size: 2em;
   }
-  .main_content .main_right ul li:nth-child(2) dl dd,
-  .main_content .main_right ul li:nth-child(3) dl dd,
-  .main_content .main_right ul li:nth-child(4) dl dd,
-  .main_content .main_right ul li:nth-child(5) dl dd,
+  .main_content .main_right ul li:nth-child(6) dl dt {
+    font-size: 1.5em;
+  }
   .main_content .main_right ul li:nth-child(6) dl dd {
-    font-size: 1.1em;
+    margin-left: 30px;
+  }
+  .main_content .main_right ul li:nth-child(6) dl dd p {
+    width: 25%;
+    font-size: 1.2em;
+  }
+  .main_content .main_right ul li:nth-child(6) dl dd span {
+    width: 70%;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=about.css.map */

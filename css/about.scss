@@ -3,7 +3,6 @@
 .main_content{
     width:100%;
     margin-top:150px;
-
     &::after{
         content: '';
         display:block;
@@ -15,7 +14,6 @@
         position:relative;
         left:20%;
         figure{
-     
             p{
                 img{
                     width:300px;
@@ -65,8 +63,7 @@
             li:nth-child(2),
             li:nth-child(3),
             li:nth-child(4),
-            li:nth-child(5),
-            li:nth-child(6){
+            li:nth-child(5){
                 margin-left:50px;
                 opacity: 0.9;
                 h2{font-size:2em;}
@@ -76,9 +73,24 @@
                     white-space:pre-line;
                     margin-left:2em;
                 }
+            }
+            li:nth-child(6){
+                h2{font-size:2em;}
                 dl{
                     dt{font-size:1.5em;}
-                    dd{font-size:1.3em;}
+                    dd{
+                        width:90%;
+                        display:flex;
+                        align-items: center;
+                        p{
+                            width:30%;
+                            font-size:1.4em;                            
+                        }
+                        span{
+                            width:70%;
+                            font-size:1.1rem;
+                        }
+                    }
                 }
             }
         }
@@ -145,8 +157,7 @@
                 li:nth-child(2),
                 li:nth-child(3),
                 li:nth-child(4),
-                li:nth-child(5),
-                li:nth-child(6){
+                li:nth-child(5){
                     margin-left:15px;
                     h2{font-size:1em;}
                     p{font-size:0.6em;}
@@ -157,9 +168,22 @@
                         white-space:pre-line;
                         margin-left:2em;
                     }
+                }
+                li:nth-child(6){
+                    h2{font-size:1em;}
                     dl{
-                        dt{font-size:0.9em;}
-                        dd{font-size:0.6em; margin:0 25px;}
+                        dt{font-size:1em;}
+                        dd{
+                            margin-left: 0;
+                            p{
+                                width:30%;
+                                font-size:0.7em;
+                            }
+                            span{
+                                width:70%;
+                                font-size:0.6rem;
+                            }
+                        }
                     }
                 }
             }
@@ -206,8 +230,7 @@
                 li:nth-child(2),
                 li:nth-child(3),
                 li:nth-child(4),
-                li:nth-child(5),
-                li:nth-child(6){
+                li:nth-child(5){
                     margin-left:30px;
                     h2{font-size:1.5em;}
                     p{font-size:0.9em;}
@@ -216,9 +239,22 @@
                         white-space:pre-line;
                         margin-left:2em;
                     }
+                }
+                li:nth-child(6){
+                    h2{font-size:1.7em;}
                     dl{
-                        dt{font-size:1.3em;}
-                        dd{font-size:0.9em;}
+                        dt{font-size:1.1em;}
+                        dd{
+                            margin-left: 20px;
+                            p{
+                                width:30%;
+                                font-size:1em;
+                            }
+                            span{
+                                width:70%;
+                                font-size:0.8rem;
+                            }
+                        }
                     }
                 }
             }
@@ -263,8 +299,7 @@
                 li:nth-child(2),
                 li:nth-child(3),
                 li:nth-child(4),
-                li:nth-child(5),
-                li:nth-child(6){
+                li:nth-child(5){
                     margin-left:40px;
                     h2{font-size:1.5em;}
                     p{font-size:1.1em;}
@@ -273,9 +308,22 @@
                         white-space:pre-line;
                         margin-left:2em;
                     }
+                }
+                li:nth-child(6){
+                    h2{font-size:2em;}
                     dl{
-                        dt{font-size:1.3em; }
-                        dd{font-size:1.1em;}
+                        dt{font-size:1.5em;}
+                        dd{
+                            margin-left: 30px;
+                            p{
+                                width:25%;
+                                font-size:1.2em;
+                            }
+                            span{
+                                width:70%;
+                                font-size:1rem;
+                            }
+                        }
                     }
                 }
             }
