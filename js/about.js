@@ -1,18 +1,1 @@
-$(function(){
-
-    //about 페이지 image fixed
-    function scrollFixed(){
-        $(window).scroll(function(){
-            var scrollValue = $(this).scrollTop();
-            var fixedLeft = $('.main_left').offset().top / 2;
-
-            if(scrollValue >= fixedLeft){
-                $('.main_left').addClass('scroll-fixed');
-            }else{
-                $('.main_left').removeClass('scroll-fixed');
-            }
-        });
-    }
-    scrollFixed();
-
-});
+$((function(){$(window).scroll((function(){$(this).scrollTop()>=$(".main_left").offset().top/2?$(".main_left").addClass("scroll-fixed"):$(".main_left").removeClass("scroll-fixed")}))}));
