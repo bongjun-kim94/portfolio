@@ -96,6 +96,13 @@
   margin-left: 2em;
 }
 
+.main_content .main_right ul li:nth-child(6) > span {
+  width: 75%;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
 .main_content .main_right ul li:nth-child(6) h2 {
   font-size: 2em;
 }
@@ -187,6 +194,10 @@
     white-space: pre-line;
     margin-left: 2em;
   }
+  .main_content .main_right ul li:nth-child(6) > span {
+    width: 90%;
+    margin-bottom: 20px;
+  }
   .main_content .main_right ul li:nth-child(6) h2 {
     font-size: 1em;
   }
@@ -265,6 +276,10 @@
     white-space: pre-line;
     margin-left: 2em;
   }
+  .main_content .main_right ul li:nth-child(6) > span {
+    width: 85%;
+    margin-bottom: 30px;
+  }
   .main_content .main_right ul li:nth-child(6) h2 {
     font-size: 1.7em;
   }
@@ -341,6 +356,9 @@
   .main_content .main_right ul li:nth-child(5) span {
     white-space: pre-line;
     margin-left: 2em;
+  }
+  .main_content .main_right ul li:nth-child(6) > span {
+    margin-bottom: 30px;
   }
   .main_content .main_right ul li:nth-child(6) h2 {
     font-size: 2em;

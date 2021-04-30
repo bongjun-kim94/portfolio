@@ -75,6 +75,12 @@
                 }
             }
             li:nth-child(6){
+                > span{
+                    width:75%;
+                    border-bottom:1px solid #ddd;
+                    display:inline-block;
+                    margin-bottom:50px;
+                }
                 h2{font-size:2em;}
                 dl{
                     dt{font-size:1.5em;}
@@ -97,23 +103,6 @@
     }
     
 }
-
-// .animate__fadeIn{
-//     //작동전 딜레이
-//     animation-delay: 0.3s;
-//     //작동시간
-//     animation-duration: 0.8s;
-//     //반복 횟수
-//     //animation-iteration-count: 3;
-// }
-// .main_01 .animate__fadeInUp{
-//     animation-delay: 0.6s;
-// }
-
-// .main_02 .animate__fadeInUp{
-//     animation-delay: 0.9s;
-
-// }
 
 @import "./mixin";
 
@@ -170,6 +159,10 @@
                     }
                 }
                 li:nth-child(6){
+                    > span{
+                        width:90%;
+                        margin-bottom:20px;
+                    }
                     h2{font-size:1em;}
                     dl{
                         dt{font-size:1em;}
@@ -241,6 +234,10 @@
                     }
                 }
                 li:nth-child(6){
+                    > span{
+                        width:85%;
+                        margin-bottom:30px;
+                    }
                     h2{font-size:1.7em;}
                     dl{
                         dt{font-size:1.1em;}
@@ -310,6 +307,9 @@
                     }
                 }
                 li:nth-child(6){
+                    > span{
+                        margin-bottom:30px;
+                    }
                     h2{font-size:2em;}
                     dl{
                         dt{font-size:1.5em;}
