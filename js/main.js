@@ -2,7 +2,7 @@ $(function(){
 
     // 로딩창
     $(window).on('load', function(){
-        $('#loading').delay('3000').fadeOut();
+        $('#loading').fadeOut();
     });
 
     // 버거메뉴 contact 메뉴
