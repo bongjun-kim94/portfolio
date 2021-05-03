@@ -1,0 +1,1 @@
+$((function(){$(".footer").load("footer.html .footer > div"),function(){function o(){window.location=linkLocation}$("body").css("display","none"),$("body").fadeIn(2e3),$("a.transition").click((function(n){n.preventDefault(),linkLocation=this.href,$("body").fadeOut(1e3,o)}))}()}));

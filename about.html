@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김봉준 | 프론트엔드 포트폴리오</title>
+    <link href="assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="assets/css/about.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/about.js"></script>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="inner_header">
+            <a href="index.html"><h1>bJ</h1></a>
+            <div id="burger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <article class="main_content">
+        <div class="main_left">
+            <figure>
+                <p>
+                    <img src="assets/images/about_me.png" alt="">
+                </p>
+                <figcaption>
+                    <p>
+                        1994.06.03 인천 출생
+                        e-mail : mydlwm_s@naver.com
+                    </p>
+                    <p>
+                        insta : @bongjunee
+                        Github : https://github.com/bongjun-kim94
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+
+        <div class="main_right">
+            <ul>
+                <li>
+                    <h1>김봉준 BongJun Kim</h1>
+                    <p>안녕하세요 웹 개발 전문가가 목표인 Front-End Developer 입니다.</p>
+                    <span></span>
+                </li>
+                <li>
+                    <p>
+                        · 트렌드를 추구하고 앞서가며, 하루하루 성장하는 것이 목표입니다.
+                        · 기본이 항상 중요하다고 생각합니다
+                        · 결과물을 도출해 내는 것을 좋아합니다
+                        · 맛있는 것을 먹으러 다니는 걸 좋아합니다
+                    </p>
+                </li>
+                <li>
+                    <h2>자격정보</h2>
+                    <p>
+                        2020.11.12<span>사무자동화산업기사 취득</span>
+                        2020.08.28<span>정보처리산업기사 취득</span>
+                        2016.01.07<span>운전면허 1종</span>
+                        2012.07.20<span>웹디자인기능사 취득</span>
+                        2012.06.05<span>ITQ(한글)</span>
+                        2011.10.27<span>ITQ(파워포인트)</span>
+                    </p>
+                </li>
+                <li>
+                    <h2>경력사항</h2>
+                    <p>
+                        2012~2013<span>CLEX - IT서비스팀</span>
+                        2017~2018<span>금형디자인학과 A반 대표</span>
+                        2021.05<span>&emsp;&ensp;강남 그린컴퓨터 아트학원 UI/UX디자인 웹퍼블리셔&프론트엔드</span>
+                        <p class="p_tap">개발자 양성과정 수료</p>
+                    </p>
+                </li>
+                <li>
+                    <h2>학력사항</h2>
+                    <p>
+                        2019 경기과학기술대학교 금형디자인과 졸업
+                        2013 인천정보산업 고등학교
+                    </p>
+                </li>
+                <li>
+                    <span></span>
+                    <h2>Skills</h2>
+                    <dl>
+                        <dt>Well used</dt>
+                        <dd><p>· HTML5</p><span>웹표준 · 접근성을 고려하여 코딩합니다.</span></dd>
+                        <dd><p>· CSS3 & SASS</p><span>CSS3를 활용한 반응형, SASS문법으로 효율적으로 코딩합니다.</span></dd>
+                        <dd><p>· JavaScript</p><span>JavaScript의 기본 문법을 이해하고 있습니다.</span></dd>
+                        <dd><p>· jQuery</p><span>jQuery를 활용한 기능 구현이 가능합니다.</span></dd>
+                    </dl>
+                    <dl>
+                        <dt>Experience</dt>
+                        <dd><p>· WebPack</p><span>완성된 작업물을 번들링하여 배포 가능합니다.</span></dd>
+                        <dd><p>· React</p><span>간단한 페이지 동작구현 가능합니다 ex)corona19</span></dd>
+                        <dd><p>· Canvas</p><span>canvas를 활용하여 기본동작 구현가능</span></dd>
+                        <dd><p>· ajax</p><span>웹페이지 속도 향상을 위해 간단한 데이터 작업이 가능합니다.</span></dd>
+                        <dd><p>· php</p><span>Form data를 활용하여 DB연동 및 간단한 작업가능 합니다.</span></dd>
+                        <dd><p>· MySQL</p><span>기본적인 개념을 이해하고, 간단한 query문 사용 가능합니다.</span></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- canvas -->
+    <div id="dotty"></div>
+    
+    <!-- footer -->
+    <footer class="footer"></footer>
+    
+    <script>
+        var NUM_PARTICLES = ((ROWS = 12) * (COLS = 30)), THICKNESS = Math.pow(200, 2),
+            SPACING = 50,
+            MARGIN = 100,
+            COLOR = 220,
+            DRAG = 0.95,
+            EASE = 0.25,
+            container, particle, canvas, mouse, stats, list, ctx, tog, man, dx, dy, mx, my, d, t, f, a, b, i, n, w, h, p, s, r, c; 
+            particle = { vx: 0, vy: 0, x: 0, y: 0 };
+
+        function init() {
+            container = document.getElementById('dotty');
+            canvas = document.createElement('canvas');
+            ctx = canvas.getContext('2d');
+            man = false;
+            tog = true; list = [];
+            w = canvas.width = COLS * SPACING + MARGIN * 2;
+            h = canvas.height = ROWS * SPACING + MARGIN * 2;
+            for (i = 0; i < NUM_PARTICLES; i++) {
+                p = Object.create(particle); p.x = p.ox = MARGIN + SPACING * (i % COLS);
+                p.y = p.oy = MARGIN + SPACING * Math.floor(i / COLS); list[i] = p;
+            }
+            container.addEventListener('mousemove', function (e) {
+                bounds = container.getBoundingClientRect();
+                mx = e.clientX - bounds.left; my = e.clientY - bounds.top; man = true;
+            });
+            if (typeof Stats === 'function') {
+                document.body.appendChild((stats = new Stats()).domElement);
+            }
+            container.appendChild(canvas); 
+        }
+
+        function step() { 
+            if (stats) stats.begin(); 
+            if (tog = !tog) {
+                if (!man) {
+                    t = +new Date() * 0.000; mx = w * 0.5 + (Math.cos(t * 2.1) * Math.cos(t * 0.9) * w * 0.45);
+                    my = h * 0.5 + (Math.sin(t * 3.2) * Math.tan(Math.sin(t * 0.8)) * h * 0.45);
+                }
+                for (i = 0; i < NUM_PARTICLES; i++) {
+                    p = list[i]; d = (dx = mx - p.x) * dx + (dy = my - p.y) * dy;
+                    f = -THICKNESS / d; 
+                    if (d < THICKNESS) {
+                        t = Math.atan2(dy, dx);
+                        p.vx += f * Math.cos(t); p.vy += f * Math.sin(t);
+                    } 
+                    p.x += (p.vx *= DRAG) + (p.ox - p.x) * EASE;
+                    p.y += (p.vy *= DRAG) + (p.oy - p.y) * EASE; 
+                } 
+            } 
+            else {
+                b = (a = ctx.createImageData(w, h)).data;
+                for (i = 0; i < NUM_PARTICLES; i++) {
+                    p = list[i]; b[n = (~~p.x + (~~p.y * w)) * 4] = b[n + 1] = b[n + 2] = COLOR, b[n + 3] = 255;
+                } 
+                ctx.putImageData(a, 0, 0);
+            } if (stats) stats.end(); requestAnimationFrame(step); 
+        }
+        init();
+        step();
+    </script>
+
+    <script>
+        // 버거메뉴
+        var burgerMenu = document.getElementById('burger-menu');
+        var overlay = document.getElementById('menu');
+        burgerMenu.addEventListener('click',function(){
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+    </script>
+</body>
+</html>
