@@ -1,1 +1,0 @@
-$((function(){$(window).scroll((function(){$(this).scrollTop()>=$(".main_left").offset().top/2?$(".main_left").addClass("scroll-fixed"):$(".main_left").removeClass("scroll-fixed")}))}));
